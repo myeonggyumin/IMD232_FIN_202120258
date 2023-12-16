@@ -15,8 +15,6 @@
         font-family: 'VT323', monospace;
       }
     </style>
-    <link rel="stylesheet" href="../../../plugin/prism/prism.css" />
-    <script src="../../../plugin/prism/prism.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
     <script src="../../../script/p5Util.js" defer></script>
@@ -24,9 +22,13 @@
     <script src="./script/flow.js"></script>
     <script src="./script/vehicle.js"></script>
     <script src="./script/vehicle2.js"></script>
-    <script src="./script/particles.js"></script>
   </head>
   <body>
+    <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop>
+        <source src="../video.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="viewport">
       <header>
         <section>
@@ -44,7 +46,13 @@
       </main>
       <footer>
         <section>
-          <div class="container"></div>
+          <div class="container">
+            <button
+              type="button"
+              onclick="location.href='../saturn/index3.html' ">
+              NEXT
+            </button>
+          </div>
         </section>
       </footer>
     </div>

@@ -59,11 +59,11 @@ function setup() {
   });
 
   frameRate(10);
-  background(255);
+  // background(255);
 }
 
 function draw() {
-  background(255);
+  // background(255);
 
   tiles.forEach((each) => {
     each.calcNextState();
