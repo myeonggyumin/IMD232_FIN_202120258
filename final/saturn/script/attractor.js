@@ -18,16 +18,15 @@ class Attractor {
   }
 
   display() {
-    strokeWeight(4);
-    stroke(0);
+    imageMode(CENTER);
+    image(img, this.position.x, this.position.y);
     if (this.dragging) {
-      fill(50);
+      tint(100, 200);
     } else if (this.hover) {
-      fill(100);
+      tint(230, 230);
     } else {
-      fill(175, 200);
+      tint(255, 255);
     }
-    circle(this.position.x, this.position.y, this.radius * 2);
   }
 
   handleHover(mx, my) {

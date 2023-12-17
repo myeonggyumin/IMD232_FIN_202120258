@@ -18,37 +18,23 @@ class Mover {
     this.velocity.add(this.acceleration);
     this.position.add(this.velocity);
 
-    this.velocityVisualization.set(this.velocity);
-    this.velocityVisualization.mult(10);
-
-    this.accelerationVisualization.set(this.acceleration);
-    this.accelerationVisualization.mult(100);
-
     this.acceleration.mult(0);
   }
 
   display() {
     stroke(0);
-    strokeWeight(2);
-    fill(127, 127);
+    noStroke();
+    fill(150, 100);
     circle(this.position.x, this.position.y, this.radius * 2);
   }
 
-  displayVectors() {
-    noFill();
-    stroke('red');
-    line(
-      this.position.x,
-      this.position.y,
-      this.position.x + this.velocityVisualization.x,
-      this.position.y + this.velocityVisualization.y
+  mouseIsPressed() {
+    let mouseDirection = createVector(
+      mouseX - this.position.x,
+      mouseY - this.position.y
     );
-    stroke('blue');
-    line(
-      this.position.x,
-      this.position.y,
-      this.position.x + this.accelerationVisualization.x,
-      this.position.y + this.accelerationVisualization.y
-    );
+    mouseDirection.setMag(10);
+    this.velocity.add(mouseDirection);
+    this.acceleration.add(mouseDirection);
   }
 }

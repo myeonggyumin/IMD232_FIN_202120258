@@ -21,34 +21,11 @@ class Mover2 {
     this.velocityVisualization.set(this.velocity);
     this.velocityVisualization.mult(10);
 
-    this.accelerationVisualization.set(this.acceleration);
-    this.accelerationVisualization.mult(100);
-
     this.acceleration.mult(0);
   }
 
   display() {
-    stroke(0);
-    strokeWeight(2);
-    fill(255, 255);
-    circle(this.position.x, this.position.y, this.radius * 2);
-  }
-
-  displayVectors() {
-    noFill();
-    stroke('red');
-    line(
-      this.position.x,
-      this.position.y,
-      this.position.x + this.velocityVisualization.x,
-      this.position.y + this.velocityVisualization.y
-    );
-    stroke('blue');
-    line(
-      this.position.x,
-      this.position.y,
-      this.position.x + this.accelerationVisualization.x,
-      this.position.y + this.accelerationVisualization.y
-    );
+    imageMode(CENTER);
+    image(img2, this.position.x, this.position.y);
   }
 }

@@ -126,8 +126,8 @@ h6 {
 }
 
 p {
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.75rem;
   max-width: 93ch;
   margin-block: 0.5em;
   word-break: keep-all;
@@ -310,6 +310,24 @@ canvas {
   object-fit: cover;
 }
 
+.wrap {
+  max-width: 120rem;
+  margin-inline: auto;
+  padding-block: 3rem;
+  padding-inline: 5rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: lime;
+  text-align: center;
+}
+
+.lg-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 button {
   width: 240px;
   height: 80px;
@@ -347,4 +365,24 @@ buttonTitle {
   left: 20%;
   top: 10%;
   transform: translate(-50%, -50%);
+}
+
+#dynamic {
+  position: relative;
+  display: inline-block;
+}
+
+#dynamic::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 2px;
+  height: 70%;
+  background-color: lime;
+}
+
+#dynamic.active::after {
+  display: none;
 }
