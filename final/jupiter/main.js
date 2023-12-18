@@ -1,3 +1,5 @@
+//Original Code from: https://www.youtube.com/watch?v=e56H5n1SvEs&t=1154s&ab_channel=%EC%88%98%EC%BD%94%EB%94%A9
+
 let target = document.querySelector('#dynamic');
 
 function randomString() {
@@ -37,5 +39,3 @@ function blink() {
 }
 
 setInterval(blink, 500);
-
-//출처 https://www.youtube.com/watch?v=e56H5n1SvEs&t=1154s&ab_channel=%EC%88%98%EC%BD%94%EB%94%A9
