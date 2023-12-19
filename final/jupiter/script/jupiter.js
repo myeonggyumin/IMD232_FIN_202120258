@@ -1,3 +1,13 @@
+// Original Code from: https://editor.p5js.org/natureofcode/sketches/egribz8WV
+// Daniel Shiffman
+// The Nature of Code
+// Example 5-4: Flow Field Following
+
+//Original Code from: https://spctrm404.github.io/IMD232/src/w7/flowFieldFollowing/index.html
+//OO-SUNG SON (spctrm404)
+
+//Modified by Myeong gyu min
+
 let debug = true;
 let flowfield;
 let vehicles = [];

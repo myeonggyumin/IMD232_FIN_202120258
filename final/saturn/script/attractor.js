@@ -1,3 +1,13 @@
+// Original Code from: https://editor.p5js.org/natureofcode/sketches/LSXJ6-VziJ
+// Daniel Shiffman
+// The Nature of Code
+// Example 2-7: Attraction with Many Movers
+
+//Original Code from: https://spctrm404.github.io/IMD232/src/w4/attractionManyMovers/index.html
+//OO-SUNG SON (spctrm404)
+
+//Modified by Myeong gyu min
+
 class Attractor {
   constructor() {
     this.position = createVector(width / 2, height / 2);

@@ -3,7 +3,10 @@
 // The Nature of Code
 // Example 5-4: Flow Field Following
 
-//Modified by OO-SUNG SON (spctrm404)
+//Original Code from: https://spctrm404.github.io/IMD232/src/w7/flowFieldFollowing/index.html
+//OO-SUNG SON (spctrm404)
+
+//Modified by Myeong gyu min
 
 class FlowField {
   constructor(resolution, noiseVel) {
